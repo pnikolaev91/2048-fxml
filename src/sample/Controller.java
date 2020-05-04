@@ -8,20 +8,20 @@ import javafx.scene.layout.Pane;
 
 public class Controller {
 
-    Driver driver = new Driver();
+    private Driver driver = new Driver();
 
     @FXML
-    Pane p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15;
+    private Pane p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15;
 
     @FXML
-    Label l0, l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, win, record, balls;
+    private Label l0, l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, win, record, balls;
 
-    boolean showWin = false;
+    private boolean showWin = false;
 
-    Label[][] labels;
-    Pane[][] panels;
-    Record rec = Record.load();
-    Long b = 0L;
+    private Label[][] labels;
+    private Pane[][] panels;
+    private Record rec = Record.load();
+    private Long b = 0L;
 
     public void init() {
         labels = new Label[][]{{l0, l1, l2, l3}, {l4, l5, l6, l7}, {l8, l9, l10, l11}, {l12, l13, l14, l15}};

@@ -47,7 +47,7 @@ public class Driver {
         return false;
     }
 
-    public boolean setRandomValue() {
+    private boolean setRandomValue() {
         if (!existFreeSlot()) {
             return false;
         }

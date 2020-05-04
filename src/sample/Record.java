@@ -4,7 +4,7 @@ import java.io.*;
 
 public class Record implements Serializable {
     private static final long serialVersionUID = -4774892012473509211L;
-    Long aLong = 0L;
+    private Long aLong = 0L;
 
     public Long get() {
         return aLong;
