@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="417.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <GridPane hgap="5.0" layoutX="62.0" layoutY="41.0" vgap="5.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+
+      <Button layoutX="468.0" layoutY="296.0" mnemonicParsing="false" onAction="#reset" prefHeight="80.0" prefWidth="80.0" text="Reset" />
+      <HBox layoutX="402.0" layoutY="41.0" prefHeight="100.0" prefWidth="184.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Очки" />
+                  <Label fx:id="balls" text="0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Рекорд" />
+                  <Label fx:id="record" text="0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <GridPane hgap="5.0" layoutX="62.0" layoutY="53.0" vgap="5.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Pane fx:id="p0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #e0e0e0;">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="80.0" prefWidth="80.0">
+                     <children>
+                        <Label fx:id="l0" text="0">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane fx:id="p1" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #e0e0e0;" GridPane.columnIndex="1">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="80.0" prefWidth="80.0">
+                     <children>
+                        <Label fx:id="l1" text="0">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane fx:id="p2" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #e0e0e0;" GridPane.columnIndex="2">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="80.0" prefWidth="80.0">
+                     <children>
+                        <Label fx:id="l2" text="0">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane fx:id="p3" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #e0e0e0;" GridPane.columnIndex="3">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="80.0" prefWidth="80.0">
+                     <children>
+                        <Label fx:id="l3" text="0">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane fx:id="p4" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #e0e0e0;" GridPane.rowIndex="1">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="80.0" prefWidth="80.0">
+                     <children>
+                        <Label fx:id="l4" text="0">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane fx:id="p5" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #e0e0e0;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="80.0" prefWidth="80.0">
+                     <children>
+                        <Label fx:id="l5" text="0">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane fx:id="p6" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #e0e0e0;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="80.0" prefWidth="80.0">
+                     <children>
+                        <Label fx:id="l6" text="0">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane fx:id="p7" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #e0e0e0;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="80.0" prefWidth="80.0">
+                     <children>
+                        <Label fx:id="l7" text="0">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane fx:id="p8" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #e0e0e0;" GridPane.rowIndex="2">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="80.0" prefWidth="80.0">
+                     <children>
+                        <Label fx:id="l8" text="0">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane fx:id="p9" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #e0e0e0;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="80.0" prefWidth="80.0">
+                     <children>
+                        <Label fx:id="l9" text="0">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane fx:id="p10" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #e0e0e0;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="80.0" prefWidth="80.0">
+                     <children>
+                        <Label fx:id="l10" text="0">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane fx:id="p11" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #e0e0e0;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="80.0" prefWidth="80.0">
+                     <children>
+                        <Label fx:id="l11" text="0">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane fx:id="p12" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #e0e0e0;" GridPane.rowIndex="3">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="80.0" prefWidth="80.0">
+                     <children>
+                        <Label fx:id="l12" text="0">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane fx:id="p13" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #e0e0e0;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="80.0" prefWidth="80.0">
+                     <children>
+                        <Label fx:id="l13" text="0">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane fx:id="p14" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #e0e0e0;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="80.0" prefWidth="80.0">
+                     <children>
+                        <Label fx:id="l14" text="0">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane fx:id="p15" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #e0e0e0;" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="80.0" prefWidth="80.0">
+                     <children>
+                        <Label fx:id="l15" text="0">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+      <Label fx:id="win" layoutX="42.0" layoutY="24.0" prefHeight="393.0" prefWidth="376.0" text="ВЫ ВЫИГРАЛИ!" visible="false">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
