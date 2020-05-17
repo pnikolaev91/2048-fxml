@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -18,6 +19,8 @@ public class Main extends Application {
         loader.setLocation(getClass().getResource("sample.fxml"));
         Scene scene = new Scene(loader.load());
         primaryStage.setTitle("2048");
+        primaryStage.setResizable(false);
+        primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("icon.png")));
         Controller controller = loader.getController();
         controller.init();
         primaryStage.setOnCloseRequest(we -> {

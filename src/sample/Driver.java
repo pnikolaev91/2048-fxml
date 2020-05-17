@@ -8,7 +8,6 @@ public class Driver {
     private int size = 4;
     private int[][] date;
     private Random rnd = new Random();
-    private boolean stop = false;
 
 
     public void rotation() {
@@ -47,9 +46,9 @@ public class Driver {
         return false;
     }
 
-    private boolean setRandomValue() {
+    private void setRandomValue() {
         if (!existFreeSlot()) {
-            return false;
+            return;
         }
         int i;
         int i1;
@@ -59,7 +58,6 @@ public class Driver {
         }
         while (date[i][i1] != 0);
         date[i][i1] = rnd.nextBoolean() ? 2 : 4;
-        return true;
     }
 
     public int keyPressed(int keyCode, boolean checkSum) {
@@ -126,8 +124,6 @@ public class Driver {
                 if (!checkSum) {
                     if (sum >= 0) {
                         setRandomValue();
-                    } else if (sum == -1 && !existFreeSlot()) {
-                        stop = true;
                     }
                 }
 
@@ -140,7 +136,6 @@ public class Driver {
                 rotation();
                 break;
             case 0:
-                stop = true;
                 break;
         }
         return sum;
