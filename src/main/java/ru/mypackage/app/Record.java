@@ -1,4 +1,4 @@
-package sample;
+package ru.mypackage.app;
 
 import java.io.*;
 

@@ -1,4 +1,4 @@
-package sample;
+package ru.mypackage.app;
 
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -16,11 +16,12 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("sample.fxml"));
+        ClassLoader cl = Main.class.getClassLoader();
+        loader.setLocation(cl.getResource("sample.fxml"));
         Scene scene = new Scene(loader.load());
         primaryStage.setTitle("2048");
         primaryStage.setResizable(false);
-        primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("icon.png")));
+        primaryStage.getIcons().add(new Image(cl.getResourceAsStream("icon.png")));
         Controller controller = loader.getController();
         controller.init();
         primaryStage.setOnCloseRequest(we -> {
